@@ -11,8 +11,11 @@ const formatDate = (date) =>
 export default function CityItem({ city }) {
   console.log(city);
   const { cityName, emoji, date, id, position } = city;
-  const { currentCity } = useCities();
-  function handleClick() {}
+  const { currentCity, deleteCity } = useCities();
+  function handleClick(e) {
+    e.preventDefault();
+    deleteCity(id);
+  }
   return (
     <li>
       <Link
