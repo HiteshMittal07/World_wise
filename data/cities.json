@@ -35,6 +35,30 @@
         "lng": 13.376933665713324
       },
       "id": 98443197
+    },
+    {
+      "cityName": "Castello de la Plana",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2023-09-30T07:00:36.452Z",
+      "notes": "hi guys",
+      "position": {
+        "lat": "39.98436132239626",
+        "lng": "-0.04032657000871743"
+      },
+      "id": 98443198
+    },
+    {
+      "cityName": "Palasbari",
+      "country": "India",
+      "emoji": "🇮🇳",
+      "date": "2023-10-01T09:06:35.009Z",
+      "notes": "i am student here",
+      "position": {
+        "lat": "26.063267401658663",
+        "lng": "91.5411952361646"
+      },
+      "id": 98443199
     }
   ]
 }
