@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import PageNav from "../components/PageNav";
 import { useAuth } from "../contexts/FakeAuthContext";
 import { useNavigate } from "react-router-dom";
+import Button from "../components/Button";
 export default function Login() {
   // PRE-FILL FOR DEV PURPOSES
   const [email, setEmail] = useState("jack@example.com");
@@ -14,7 +15,7 @@ export default function Login() {
     if (email && password) login(email, password);
   }
   useEffect(() => {
-    if (isAuthenticated) navigate("/app");
+    if (isAuthenticated) navigate("/app", { replace: true });
   }, [isAuthenticated]);
   // const {}
   return (
@@ -42,7 +43,9 @@ export default function Login() {
         </div>
 
         <div>
-          <button onClick={handleClick}>Login</button>
+          <Button onClick={handleClick} type="primary">
+            Login
+          </Button>
         </div>
       </form>
     </main>
